@@ -1,3 +1,4 @@
+
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
 import { expect } from "chai";
@@ -31,13 +32,11 @@ describe("forza_wallpapers", () => {
   it("Comprueba el flujo completo de Forza Wallpapers", async () => {
     // 1. Crear galería
     await program.methods
-      .crearGaleria("Forza Test")
-      .accounts({
-        galeria: galeriaPda,
-        owner,
-        systemProgram: anchor.web3.SystemProgram.programId,
-      })
-      .rpc();
+  .crearGaleria("Forza Test")
+  .accounts({
+    owner,
+  })
+  .rpc();
 
     const galeria = await program.account.galeria.fetch(galeriaPda);
 
@@ -187,6 +186,8 @@ describe("forza_wallpapers", () => {
 
     expect(wallpaperEliminado).to.equal(null);
 
-    console.log("Todas las comprobaciones de Forza Wallpapers finalizaron correctamente.");
+    console.log(
+      "Todas las comprobaciones de Forza Wallpapers finalizaron correctamente."
+    );
   });
 });
