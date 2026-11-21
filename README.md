@@ -136,3 +136,8 @@ También se desarrolló la presentación visual del catálogo y la integración 
 El programa está desplegado en Solana Devnet y cuenta con pruebas automatizadas aprobadas en Localnet.
 
 El frontend está preparado para conectarse a Devnet mediante una wallet compatible.
+
+## 🎥 Demostración del proyecto
+
+Puedes ver la presentación y demostración del funcionamiento de **Forza Wallpapers** en el siguiente video:
+https://www.youtube.com/watch?v=ImyqsFIkoAY
